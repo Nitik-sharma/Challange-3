@@ -34,8 +34,8 @@ function Header() {
     },
   ];
   return (
-    <div className="  ">
-      <header className="flex  md:flex-row items-center justify-between shadow-2xl	 p-5  ">
+    <div className="w-[100%] box-border sticky top-0 z-[999] bg-white  ">
+      <header className="flex   w-full  md:flex-row items-center justify-between shadow-2xl	 p-5  ">
         {/* Logo image */}
         <Link to={"/"}>
           {" "}

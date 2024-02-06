@@ -1,21 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Image({ img, text, htext, buttonText, url }) {
+function Image({ img, text, htext, buttonText, url, falag }) {
   return (
-    <>
-      <img src={img} className=" w-[100%] relative" />
-      <div className="flex flex-col items-start justify-center">
-        <h1 className=" absolute top-[70%] left-[23%] tracking-[.25em] text-6xl font-extrabold text-white uppercase">
+    <div className=" w-full relative z-1">
+      <img src={img} className="w-[100%]  " />
+      <div className="flex flex-col items-start justify-center absolute top-[20%] left-[20%] md:top-[40%] md:left-[25%] ">
+        <h1 className="text-xl md:text-6xl font-semibold font-mono text-white  tracking-wide">
           {htext}
         </h1>
-        <p className=" absolute top-[90%] left-[41%] text-xxl md:text-2xl text-white">
+        {falag === true ? (
+          <div className=" flex flex-col w-[80%] h-6 ">
+            <label className=" text-start mb-3 text-xl font-medium text-white ">
+              email
+            </label>
+            <input
+              type="email"
+              className=" w-[100%] rounded-md border-none outline-none"
+              placeholder="your email address"
+            />
+          </div>
+        ) : (
+          ""
+        )}
+        <p className="text-sm md:text-4xl m-4 text-clip text-white font-serif">
           {text}
         </p>
-        <Link to={url} className=" absolute top-[100%] left-[46%] p-5 bg-white">
+        <Link
+          to={url}
+          className=" text-xl p-2 mb-3  ml-16 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-yellow-50 font-mono capitalize md:text-3xl md:p-6 md:m-16 md:ml-48"
+        >
           {buttonText}
         </Link>
       </div>
-    </>
+    </div>
   );
 }
 
