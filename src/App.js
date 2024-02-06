@@ -7,6 +7,7 @@ import Sustainability from "./pages/Sustainability";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

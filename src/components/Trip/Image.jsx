@@ -25,12 +25,21 @@ function Image({ img, text, htext, buttonText, url, falag }) {
         <p className="text-sm md:text-4xl m-4 text-clip text-white font-serif">
           {text}
         </p>
-        <Link
-          to={url}
-          className=" text-xl p-2 mb-3  ml-16 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-yellow-50 font-mono capitalize md:text-3xl md:p-6 md:m-16 md:ml-48"
-        >
-          {buttonText}
-        </Link>
+        {falag === false && (
+          <Link
+            to={url}
+            className=" text-xl p-2 mb-3  ml-16 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-yellow-50 font-mono capitalize md:text-3xl md:p-6 md:m-16 md:ml-48"
+          >
+            {buttonText}
+          </Link>
+        )}
+        {falag === true ? (
+          <button className=" text-xl p-2 mb-3  ml-16 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-yellow-50 font-mono capitalize md:text-3xl md:p-4 md:m-16 md:ml-48">
+            {buttonText}
+          </button>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
