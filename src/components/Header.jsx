@@ -3,6 +3,7 @@ import Logo from "../assets/build-play-logo-AE0vXbXy0pHLopxp.avif";
 import { Link } from "react-router-dom";
 import { CiShoppingCart, CiMenuBurger } from "react-icons/ci";
 import { MdClose } from "react-icons/md";
+import { Dropdown } from "flowbite-react";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -12,10 +13,7 @@ function Header() {
       title: "Home",
       link: "/",
     },
-    {
-      title: "Shop",
-      link: "/shop",
-    },
+
     {
       title: "About",
       link: "/about",
@@ -48,6 +46,15 @@ function Header() {
               </Link>
             ))}
           </ul>
+          <Dropdown label="Shop" inline className=" text-xl font-bold">
+            <Link to={"/allProduct"}>
+              <Dropdown.Item>All Product</Dropdown.Item>
+            </Link>
+            <Link to={"/newCollection"}>
+              {" "}
+              <Dropdown.Item>New Collaction</Dropdown.Item>
+            </Link>
+          </Dropdown>
           {/* cart logo */}
           <div className=" flex items-center justify-center font-bold text-xl mr-2">
             <CiShoppingCart size={30} />
