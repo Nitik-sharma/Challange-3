@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className=" h-60 bg-gray-300">
+    <div className=" bg-gray-300">
       <div className=" flex flex-col md:flex-row justify-between  ">
         <div className=" m-6">
           <h1 className=" text-2xl md:text-5xl  font-bold ">MINA</h1>

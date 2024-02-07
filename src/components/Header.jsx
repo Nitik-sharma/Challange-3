@@ -28,10 +28,6 @@ function Header() {
       title: "Contact",
       link: "/contact",
     },
-    {
-      title: "Blog",
-      link: "/blog",
-    },
   ];
   return (
     <div className="w-[100%] box-border sticky top-0 z-[999] bg-white  ">
@@ -42,19 +38,21 @@ function Header() {
           <img src={Logo} alt="logo" className=" h-16 md:h-24 " />
         </Link>
         {/* links  */}
-        <ul className=" hidden md:flex items-center justify-between gap-4 font-semibold text-xl ">
-          {links.map((items, i) => (
-            <Link key={i} to={items.link}>
-              <li className=" hover:text-orange-600 hover:scale-105">
-                {items.title}
-              </li>
-            </Link>
-          ))}
-        </ul>
-        {/* cart logo */}
-        <div className=" flex items-center justify-center font-bold text-xl mr-2">
-          <CiShoppingCart size={30} />
-          <span>0</span>
+        <div className=" flex items-start  gap-1 md:gap-8">
+          <ul className=" hidden md:flex items-center justify-between gap-4 font-semibold text-xl ">
+            {links.map((items, i) => (
+              <Link key={i} to={items.link}>
+                <li className=" hover:text-orange-600 hover:scale-105">
+                  {items.title}
+                </li>
+              </Link>
+            ))}
+          </ul>
+          {/* cart logo */}
+          <div className=" flex items-center justify-center font-bold text-xl mr-2">
+            <CiShoppingCart size={30} />
+            <span>0</span>
+          </div>
         </div>
         {/* responsive navbar */}
         <div className=" flex md:hidden  relative">

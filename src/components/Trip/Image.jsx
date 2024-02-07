@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Image({ img, text, htext, buttonText, url, falag }) {
+function Image({ img, text, htext, buttonText, url, falag, button }) {
   return (
     <div className=" w-full relative z-1">
       <img src={img} className="w-[100%]  " />
-      <div className="flex flex-col items-start justify-center absolute top-[20%] left-[20%] md:top-[40%] md:left-[25%] ">
+      <div className="flex flex-col items-start justify-center absolute top-[20%] left-[20%] md:top-[40%] md:left-[34%] ">
         <h1 className="text-xl md:text-6xl font-semibold font-mono text-white  tracking-wide">
           {htext}
         </h1>
