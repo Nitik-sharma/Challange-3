@@ -12,22 +12,31 @@ function BestSeler() {
         <h1 className=" text-sm md:text-5xl capitalize font-mono font-medium mb-6">
           Our bestsellers
         </h1>
+
         <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 p-3">
           {List.map((item) => (
-            <div key={item.id}>
-              <img src={item.pic} alt={item.id} />
+            <Link
+              to={{
+                pathname: `/information/${item.id}`,
+                state: { item },
+              }}
+              key={item.id}
+            >
               <div>
-                <h3 className=" text-xs md:text-xl font-serif font-semibold m-3">
-                  {item.title}
-                </h3>
-                <p className=" text-sm md:text-xl">
-                  <span className=" mr-2 text-gray-400 line-through ">
-                    {item.price1}
-                  </span>
-                  <span className=" ml-2">{item.price2}</span>
-                </p>
+                <img src={item.pic} alt={item.id} />
+                <div>
+                  <h3 className=" text-xs md:text-xl font-serif font-semibold m-3">
+                    {item.title}
+                  </h3>
+                  <p className=" text-sm md:text-xl">
+                    <span className=" mr-2 text-gray-400 line-through ">
+                      {item.price1}
+                    </span>
+                    <span className=" ml-2">{item.price2}</span>
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

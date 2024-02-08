@@ -22,7 +22,7 @@ export const List = [
     discription:
       "Beautiful hand-made flowerpot with the most gorgeous thick yellow matte glaze. The flowerpot has a hole for drainage. This piece is handmade in stoneware clay and one of a kind. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Yellow, Blue or White",
+    color: ["Yellow", "Blue", "White"],
     Measurements: "10x10 cm",
   },
   {
@@ -34,7 +34,7 @@ export const List = [
     discription:
       "Gorgeous textured bud vase with a matte ivory glaze. Try using a few as a dining table centerpiece. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Ivory, Red, Purple",
+    color: ["Ivory", "Red", "Purple"],
     Measurements: "18x12 cm",
   },
   {
@@ -46,7 +46,7 @@ export const List = [
     discription:
       "Inspired by the female figure, a beautiful vase for one or two stems. Finished in a soft purple-grey glaze.",
     metrial: "Stoneware clay ; matte glaze",
-    color: " Lavender",
+    color: [" Lavender"],
     Measurements: "30x18 cm",
   },
   {
@@ -59,7 +59,7 @@ export const List = [
     discription:
       "Organic textured finish on a striking shape, this vase is one of a kind. Handmade and hand-textured in stoneware clay. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Yellow",
+    color: ["Yellow"],
     Measurements: "15x10 cm",
   },
 ];
@@ -94,7 +94,7 @@ export const Product = [
     discription:
       "Beautiful hand-made flowerpot with the most gorgeous thick yellow matte glaze. The flowerpot has a hole for drainage. This piece is handmade in stoneware clay and one of a kind. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: ["Yellow, Blue or White"],
+    color: ["Yellow", "Blue", "White"],
     Measurements: "10x10 cm",
   },
   {
@@ -106,7 +106,7 @@ export const Product = [
     discription:
       "Gorgeous textured bud vase with a matte ivory glaze. Try using a few as a dining table centerpiece. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: ["Ivory, Red, Purple"],
+    color: ["Ivory", "Red", "Purple"],
     Measurements: "18x12 cm",
   },
   {
@@ -143,7 +143,7 @@ export const Product = [
     discription:
       "Beautiful hand-made flowerpot with the most gorgeous thick yellow matte glaze. The flowerpot has a hole for drainage. This piece is handmade in stoneware clay and one of a kind. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: ["Yellow, Blue or White"],
+    color: ["Yellow", "Blue", "White"],
     Measurements: "10x10 cm",
   },
   {
@@ -155,7 +155,7 @@ export const Product = [
     discription:
       "Gorgeous textured bud vase with a matte ivory glaze. Try using a few as a dining table centerpiece. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: ["Ivory, Red, Purple"],
+    color: ["Ivory", "Red", "Purple"],
     Measurements: "18x12 cm",
   },
   {
@@ -195,7 +195,7 @@ export const NewCollaction = [
     discription:
       "Beautiful hand-made flowerpot with the most gorgeous thick yellow matte glaze. The flowerpot has a hole for drainage. This piece is handmade in stoneware clay and one of a kind. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Yellow, Blue or White",
+    color: ["Yellow", "Blue", "White"],
     Measurements: "10x10 cm",
   },
   {
@@ -207,7 +207,7 @@ export const NewCollaction = [
     discription:
       "Gorgeous textured bud vase with a matte ivory glaze. Try using a few as a dining table centerpiece. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Ivory, Red, Purple",
+    color: ["Ivory", "Red", "Purple"],
     Measurements: "18x12 cm",
   },
   {
@@ -219,7 +219,7 @@ export const NewCollaction = [
     discription:
       "Inspired by the female figure, a beautiful vase for one or two stems. Finished in a soft purple-grey glaze.",
     metrial: "Stoneware clay ; matte glaze",
-    color: " Lavender",
+    color: [" Lavender"],
     Measurements: "30x18 cm",
   },
   {
@@ -232,7 +232,7 @@ export const NewCollaction = [
     discription:
       "Organic textured finish on a striking shape, this vase is one of a kind. Handmade and hand-textured in stoneware clay. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Yellow",
+    color: ["Yellow"],
     Measurements: "15x10 cm",
   },
 ];

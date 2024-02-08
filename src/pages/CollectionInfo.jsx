@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
-import { List } from "../components/Seler/ItemList";
-import { Label, Select } from "flowbite-react";
-import { Button } from "flowbite-react";
+import { NewCollaction } from "../components/Seler/ItemList";
+import { useParams } from "react-router-dom";
+import { Label, Button, Select } from "flowbite-react";
 
-function Information() {
+function CollectionInfo() {
   const [stock, setStock] = useState(0);
   const { id } = useParams();
-
-  const selectedItem = List[id - 1];
+  const selectedItem = NewCollaction[id - 1];
   console.log(selectedItem);
   const stockLenth = selectedItem.color.length;
-
   const incrementStock = () => {
     if (stock < stockLenth) {
       setStock(stock + 1);
@@ -22,7 +19,6 @@ function Information() {
       setStock(stock - 1);
     }
   };
-
   return (
     <div className=" p-7 mt-10 mb-10">
       <div className=" flex items-center  gap-6 flex-col md:flex-row">
@@ -99,4 +95,4 @@ function Information() {
   );
 }
 
-export default Information;
+export default CollectionInfo;
