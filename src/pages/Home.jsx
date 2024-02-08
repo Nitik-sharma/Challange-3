@@ -15,7 +15,7 @@ function Home() {
         text={"Painted clay ceramics made with love."}
         htext={"Handmade ceramics"}
         buttonText={"Shop now"}
-        url={"/shop"}
+        url={"/allProduct"}
       />
       <BestSeler />
       <InstaPage />
