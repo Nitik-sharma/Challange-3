@@ -24,7 +24,7 @@ function InstaPage() {
       <h1 className=" text-2xl md:text-6xl font-bold font-serif">
         Follow us on Instagram
       </h1>
-      <div className=" grid grid-cols-1 md:grid-cols-3 mt-7">
+      <div className=" grid grid-cols-1 md:grid-cols-3 mt-7 items-center gap-4">
         {images.map((item) => (
           <img src={item.img} key={item.id} alt={item.id} />
         ))}

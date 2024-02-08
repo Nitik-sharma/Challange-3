@@ -43,11 +43,10 @@ function BestSeler() {
       <div className=" mt-4">
         <Image
           img={HomeDecor}
+          htext={"Home decor items"}
           text={"Find your new favorite pieces."}
-          htext={"Homedecor items"}
-          buttonText={"Shop now"}
-          url={"/allProduct"}
           falag={false}
+          buttonText={"Shop Now"}
         />
       </div>
 
