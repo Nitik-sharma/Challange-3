@@ -10,7 +10,7 @@ function AllProduct() {
   return (
     <div>
       <Trip text={"Free shipping on orders over $50 amount"} />
-      <Image img={Pic} htext={"Shop"} />
+      <Image img={Pic} htext={"All Product"} />
       <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 p-3">
         {Product.map((item) => (
           <div key={item.id}>
