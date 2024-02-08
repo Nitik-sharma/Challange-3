@@ -82,6 +82,55 @@ export const List2 = [
 
 export const Product = [
   {
+    id: 1,
+    title: "'Candy' Flowerpot",
+    price1: "$59.90",
+    price2: "$49.90",
+    pic: pic1,
+    discription:
+      "Beautiful hand-made flowerpot with the most gorgeous thick yellow matte glaze. The flowerpot has a hole for drainage. This piece is handmade in stoneware clay and one of a kind. ",
+    metrial: "Stoneware clay ; matte glaze",
+    color: ["Yellow, Blue or White"],
+    Measurements: "10x10 cm",
+  },
+  {
+    id: 2,
+    title: "'Drop' Vase",
+    price1: "$59.90",
+    pic: pic2,
+    price2: "$40.90",
+    discription:
+      "Gorgeous textured bud vase with a matte ivory glaze. Try using a few as a dining table centerpiece. ",
+    metrial: "Stoneware clay ; matte glaze",
+    color: ["Ivory, Red, Purple"],
+    Measurements: "18x12 cm",
+  },
+  {
+    id: 3,
+    title: "'Wave' Vase",
+    price1: "",
+    pic: pic3,
+    price2: "$69.90",
+    discription:
+      "Inspired by the female figure, a beautiful vase for one or two stems. Finished in a soft purple-grey glaze.",
+    metrial: "Stoneware clay ; matte glaze",
+    color: [" Lavender"],
+    Measurements: "30x18 cm",
+  },
+  {
+    id: 4,
+    title: "'Sun' Vase",
+
+    price1: "",
+    pic: pic4,
+    price2: "$69.90",
+    discription:
+      "Organic textured finish on a striking shape, this vase is one of a kind. Handmade and hand-textured in stoneware clay. ",
+    metrial: "Stoneware clay ; matte glaze",
+    color: ["Yellow"],
+    Measurements: "15x10 cm",
+  },
+  {
     id: 5,
     title: "''Bubble' Flowerpot",
     price1: "$59.90",
@@ -90,19 +139,19 @@ export const Product = [
     discription:
       "Beautiful hand-made flowerpot with the most gorgeous thick yellow matte glaze. The flowerpot has a hole for drainage. This piece is handmade in stoneware clay and one of a kind. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Yellow, Blue or White",
+    color: ["Yellow, Blue or White"],
     Measurements: "10x10 cm",
   },
   {
     id: 6,
-    title: "'Drop' Vase",
+    title: "'Binocular' Vase",
     price1: "$59.90",
     pic: Pic7,
-    price2: "$40.90",
+    price2: "$l49.90",
     discription:
       "Gorgeous textured bud vase with a matte ivory glaze. Try using a few as a dining table centerpiece. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Ivory, Red, Purple",
+    color: ["Ivory, Red, Purple"],
     Measurements: "18x12 cm",
   },
   {
@@ -114,7 +163,7 @@ export const Product = [
     discription:
       "Inspired by the female figure, a beautiful vase for one or two stems. Finished in a soft purple-grey glaze.",
     metrial: "Stoneware clay ; matte glaze",
-    color: " Lavender",
+    color: [" Lavender"],
     Measurements: "30x18 cm",
   },
   {
@@ -127,7 +176,7 @@ export const Product = [
     discription:
       "Organic textured finish on a striking shape, this vase is one of a kind. Handmade and hand-textured in stoneware clay. ",
     metrial: "Stoneware clay ; matte glaze",
-    color: "Yellow",
+    color: ["Yellow"],
     Measurements: "15x10 cm",
   },
 ];
