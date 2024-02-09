@@ -57,7 +57,9 @@ function Header() {
           </Dropdown>
           {/* cart logo */}
           <div className=" flex items-center justify-center font-bold text-xl mr-2">
-            <CiShoppingCart size={30} />
+            <Link to={"/cart"}>
+              <CiShoppingCart size={30} />
+            </Link>
             <span>0</span>
           </div>
         </div>

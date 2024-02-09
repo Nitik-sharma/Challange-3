@@ -11,8 +11,8 @@ import Footer from "./components/Footer";
 import AllProduct from "./pages/AllProduct";
 import NewCollection from "./pages/NewCollection";
 import Information from "./pages/Information";
-import AllProductInfo from "./pages/AllProductInfo";
-import CollectionInfo from "./pages/CollectionInfo";
+
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -27,8 +27,7 @@ function App() {
         <Route path="/newCollection" element={<NewCollection />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/information/:id" element={<Information />} />
-        <Route path="/allinformation/:id" element={<AllProductInfo />} />
-        <Route path="/collectionInfo/:id" element={<CollectionInfo />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
       <Footer />
     </div>

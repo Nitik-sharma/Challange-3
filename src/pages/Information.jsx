@@ -6,7 +6,10 @@ import { Button } from "flowbite-react";
 
 function Information() {
   const [stock, setStock] = useState(0);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
   const { id } = useParams();
 
   const selectedItem = List[id - 1] || Product[id - 1] || NewCollaction[id - 1];
@@ -23,23 +26,38 @@ function Information() {
       setStock(stock - 1);
     }
   };
-
+  useEffect(() => {
+    const savedCart = localStorage.getItem("cart");
+    if (savedCart) {
+      setCart(JSON.parse(savedCart));
+    }
+  }, []);
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   const handleAddToCart = () => {
-    if (stock > 0) {
+    const existingIndex = cart.findIndex(
+      (item) => item.UniqId === selectedItem.UniqId
+    );
+
+    if (existingIndex !== -1 && stock > 0) {
+      const updatedCart = [...cart];
+      updatedCart[existingIndex].quantity += stock;
+      updatedCart[existingIndex].price += selectedItem.price2 * stock;
+      setCart(updatedCart);
+    } else if (stock > 0) {
       setCart([
         ...cart,
         {
           id: selectedItem.id,
+          UniqId: selectedItem.UniqId,
           title: selectedItem.title,
           price: selectedItem.price2,
+          quantity: stock,
         },
       ]);
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
   };
   console.log(cart);
 

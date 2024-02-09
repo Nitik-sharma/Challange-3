@@ -15,6 +15,7 @@ import New4 from "../../assets/New-4.avif";
 export const List = [
   {
     id: 1,
+    UniqId: "Home1",
     Sno: 1,
     title: "'Candy' Flowerpot",
     price1: "$59.90",
@@ -29,6 +30,7 @@ export const List = [
   },
   {
     id: 2,
+    UniqId: "Home2",
     Sno: 2,
     title: "'Drop' Vase",
     price1: "$59.90",
@@ -42,6 +44,7 @@ export const List = [
   },
   {
     id: 3,
+    UniqId: "Home3",
     Sno: 3,
     title: "'Wave' Vase",
     price1: "",
@@ -55,6 +58,7 @@ export const List = [
   },
   {
     id: 4,
+    UniqId: "Home4",
     Sno: 4,
     title: "'Sun' Vase",
 
@@ -74,6 +78,7 @@ export const List = [
 export const List2 = [
   {
     id: 1,
+    UniqId: "pic",
     title: "About Mina",
     pic: pic5,
     discription: "Mina is a brand born out of a passion for ceramics. ",
@@ -81,6 +86,7 @@ export const List2 = [
   },
   {
     id: 2,
+    UniqId: "pic",
     title: "Sustainability",
     pic: pic6,
     discription:
@@ -92,6 +98,7 @@ export const List2 = [
 export const Product = [
   {
     id: 1,
+    UniqId: "prodect1",
     Sno: 5,
     title: "'Candy' Flowerpot",
     price1: "$59.90",
@@ -105,6 +112,7 @@ export const Product = [
   },
   {
     id: 2,
+    UniqId: "prodect2",
     Sno: 6,
     title: "'Drop' Vase",
     price1: "$59.90",
@@ -118,6 +126,7 @@ export const Product = [
   },
   {
     id: 3,
+    UniqId: "prodect3",
     Sno: 7,
     title: "'Wave' Vase",
     price1: "",
@@ -131,6 +140,7 @@ export const Product = [
   },
   {
     id: 4,
+    UniqId: "prodect4",
     Sno: 8,
     title: "'Sun' Vase",
 
@@ -145,6 +155,7 @@ export const Product = [
   },
   {
     id: 5,
+    UniqId: "prodect5",
     Sno: 9,
     title: "''Bubble' Flowerpot",
     price1: "$59.90",
@@ -158,6 +169,7 @@ export const Product = [
   },
   {
     id: 6,
+    UniqId: "prodect6",
     Sno: 10,
     title: "'Binocular' Vase",
     price1: "$59.90",
@@ -171,6 +183,7 @@ export const Product = [
   },
   {
     id: 7,
+    UniqId: "prodect7",
     Sno: 11,
     title: "'Wave' Vase",
     price1: "",
@@ -184,6 +197,7 @@ export const Product = [
   },
   {
     id: 8,
+    UniqId: "prodect8",
     Sno: 12,
     title: "'Sun' Vase",
 
@@ -201,6 +215,7 @@ export const Product = [
 export const NewCollaction = [
   {
     id: 1,
+    UniqId: "New1",
     Sno: 13,
     title: "'Bubble' Flowerpot",
     price1: "",
@@ -214,6 +229,7 @@ export const NewCollaction = [
   },
   {
     id: 2,
+    UniqId: "New2",
     Sno: 14,
     title: "'Balance' Vase",
     price1: "$59.90",
@@ -227,6 +243,7 @@ export const NewCollaction = [
   },
   {
     id: 3,
+    UniqId: "New3",
     Sno: 15,
     title: "'Wave' Vase",
     price1: "",
@@ -240,6 +257,7 @@ export const NewCollaction = [
   },
   {
     id: 4,
+    UniqId: "New4",
     Sno: 16,
     title: "'Bulb' Vase",
 
