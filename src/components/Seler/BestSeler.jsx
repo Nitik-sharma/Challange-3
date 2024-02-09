@@ -46,6 +46,7 @@ function BestSeler() {
           htext={"Home decor items"}
           text={"Find your new favorite pieces."}
           falag={false}
+          button={true}
           buttonText={"Shop Now"}
         />
       </div>

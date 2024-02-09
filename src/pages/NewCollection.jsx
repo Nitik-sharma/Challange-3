@@ -9,7 +9,7 @@ function NewCollection() {
     <div>
       {" "}
       <Trip text={"Free shipping on orders over $50 amount"} />
-      <Image img={Pic} htext={"New Collection"} />
+      <Image img={Pic} htext={"New Collection"} falag={false} button={false} />
       <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 p-3">
         {NewCollaction.map((item) => (
           <Link

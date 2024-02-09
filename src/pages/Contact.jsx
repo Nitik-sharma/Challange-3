@@ -7,9 +7,15 @@ function Contact() {
   return (
     <div>
       <Trip text={"Free shipping on orders over $50 amount"} />
-      <Image img={pic} htext={"Contact-us"} />
+      <Image
+        img={pic}
+        htext={"Contact-us"}
+        falag={false}
+        buttonText={"Shop Now"}
+        button={false}
+      />
 
-      <div className=" flex justify-between items-center gap-5 p-5 m-5">
+      <div className=" flex justify-between items-center flex-col md:flex-row gap-5 p-5 m-5">
         <div className=" left p-3 flex flex-col items-center justify-center flex-1">
           <div>
             <h1 className=" text-xl md:text-2xl font-bold m-2">Headquarters</h1>

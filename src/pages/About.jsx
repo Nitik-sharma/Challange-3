@@ -12,7 +12,7 @@ function About() {
       <Image
         img={Pic}
         falag={false}
-        s
+        button={true}
         htext={"About Build&Play"}
         buttonText={"Shoap Now"}
       />

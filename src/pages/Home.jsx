@@ -12,6 +12,7 @@ function Home() {
       <Image
         img={img}
         falag={false}
+        button={true}
         text={"Painted clay ceramics made with love."}
         htext={"Handmade ceramics"}
         buttonText={"Shop now"}
