@@ -15,10 +15,12 @@ import New4 from "../../assets/New-4.avif";
 export const List = [
   {
     id: 1,
+    Sno: 1,
     title: "'Candy' Flowerpot",
     price1: "$59.90",
     price2: "$49.90",
     pic: pic1,
+
     discription:
       "Beautiful hand-made flowerpot with the most gorgeous thick yellow matte glaze. The flowerpot has a hole for drainage. This piece is handmade in stoneware clay and one of a kind. ",
     metrial: "Stoneware clay ; matte glaze",
@@ -27,6 +29,7 @@ export const List = [
   },
   {
     id: 2,
+    Sno: 2,
     title: "'Drop' Vase",
     price1: "$59.90",
     pic: pic2,
@@ -39,6 +42,7 @@ export const List = [
   },
   {
     id: 3,
+    Sno: 3,
     title: "'Wave' Vase",
     price1: "",
     pic: pic3,
@@ -51,6 +55,7 @@ export const List = [
   },
   {
     id: 4,
+    Sno: 4,
     title: "'Sun' Vase",
 
     price1: "",
@@ -87,6 +92,7 @@ export const List2 = [
 export const Product = [
   {
     id: 1,
+    Sno: 5,
     title: "'Candy' Flowerpot",
     price1: "$59.90",
     price2: "$49.90",
@@ -99,6 +105,7 @@ export const Product = [
   },
   {
     id: 2,
+    Sno: 6,
     title: "'Drop' Vase",
     price1: "$59.90",
     pic: pic2,
@@ -111,6 +118,7 @@ export const Product = [
   },
   {
     id: 3,
+    Sno: 7,
     title: "'Wave' Vase",
     price1: "",
     pic: pic3,
@@ -123,6 +131,7 @@ export const Product = [
   },
   {
     id: 4,
+    Sno: 8,
     title: "'Sun' Vase",
 
     price1: "",
@@ -136,6 +145,7 @@ export const Product = [
   },
   {
     id: 5,
+    Sno: 9,
     title: "''Bubble' Flowerpot",
     price1: "$59.90",
     price2: "$49.90",
@@ -148,6 +158,7 @@ export const Product = [
   },
   {
     id: 6,
+    Sno: 10,
     title: "'Binocular' Vase",
     price1: "$59.90",
     pic: Pic7,
@@ -160,6 +171,7 @@ export const Product = [
   },
   {
     id: 7,
+    Sno: 11,
     title: "'Wave' Vase",
     price1: "",
     pic: Pic8,
@@ -172,6 +184,7 @@ export const Product = [
   },
   {
     id: 8,
+    Sno: 12,
     title: "'Sun' Vase",
 
     price1: "",
@@ -188,6 +201,7 @@ export const Product = [
 export const NewCollaction = [
   {
     id: 1,
+    Sno: 13,
     title: "'Bubble' Flowerpot",
     price1: "",
     price2: "$49.90",
@@ -200,6 +214,7 @@ export const NewCollaction = [
   },
   {
     id: 2,
+    Sno: 14,
     title: "'Balance' Vase",
     price1: "$59.90",
     pic: New2,
@@ -212,6 +227,7 @@ export const NewCollaction = [
   },
   {
     id: 3,
+    Sno: 15,
     title: "'Wave' Vase",
     price1: "",
     pic: New3,
@@ -224,6 +240,7 @@ export const NewCollaction = [
   },
   {
     id: 4,
+    Sno: 16,
     title: "'Bulb' Vase",
 
     price1: "",

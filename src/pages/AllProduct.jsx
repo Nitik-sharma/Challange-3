@@ -23,7 +23,7 @@ function AllProduct() {
           <Link
             key={item.id}
             to={{
-              pathname: `/allinformation/${item.id}`,
+              pathname: `/information/${item.id}`,
               state: { item },
             }}
           >

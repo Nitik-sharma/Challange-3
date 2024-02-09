@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import { List } from "../components/Seler/ItemList";
+import { List, Product, NewCollaction } from "../components/Seler/ItemList";
 import { Label, Select } from "flowbite-react";
 import { Button } from "flowbite-react";
 
 function Information() {
   const [stock, setStock] = useState(0);
+  const [cart, setCart] = useState([]);
   const { id } = useParams();
 
-  const selectedItem = List[id - 1];
+  const selectedItem = List[id - 1] || Product[id - 1] || NewCollaction[id - 1];
   console.log(selectedItem);
   const stockLenth = selectedItem.color.length;
 
@@ -22,6 +23,25 @@ function Information() {
       setStock(stock - 1);
     }
   };
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
+  const handleAddToCart = () => {
+    if (stock > 0) {
+      setCart([
+        ...cart,
+        {
+          id: selectedItem.id,
+          title: selectedItem.title,
+          price: selectedItem.price2,
+        },
+      ]);
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+  };
+  console.log(cart);
 
   return (
     <div className=" p-7 mt-10 mb-10">
@@ -87,7 +107,11 @@ function Information() {
               </h3>
             )}
           </div>
-          <Button color="blue" className=" mt-6 w-56 ">
+          <Button
+            color="blue"
+            className=" mt-6 w-56 "
+            onClick={handleAddToCart}
+          >
             Add to Bag
           </Button>
           <p className="text-xl  text-gray-600 mt-5">

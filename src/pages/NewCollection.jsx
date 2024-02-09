@@ -15,7 +15,7 @@ function NewCollection() {
           <Link
             key={item.id}
             to={{
-              pathname: `/collectionInfo/${item.id}`,
+              pathname: `/information/${item.id}`,
               state: { item },
             }}
           >
