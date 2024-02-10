@@ -54,6 +54,7 @@ function Information() {
           UniqId: selectedItem.UniqId,
           title: selectedItem.title,
           price: selectedItem.price2,
+          img: selectedItem.pic,
           quantity: stock,
         },
       ]);

@@ -60,7 +60,6 @@ function Header() {
             <Link to={"/cart"}>
               <CiShoppingCart size={30} />
             </Link>
-            <span>0</span>
           </div>
         </div>
         {/* responsive navbar */}
